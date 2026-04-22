@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-K7XKJ58D');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18079449276"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-18079449276');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casas São José | Casas de Madeira Nobre com Preço Acessível</title>
+    <meta name="description" content="Mais de 40 anos construindo sonhos com qualidade e confiança. Realize o sonho da casa própria com quem entende de construção.">
+    
+    <!-- Preconnect to CDNs -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://i.ibb.co">
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-serif { font-family: 'Cormorant Garamond', serif; }
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+        .shimmer-grid {
+            background-image: linear-gradient(to right, #f1f1f1 1px, transparent 1px), linear-gradient(to bottom, #f1f1f1 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        .swiper-button-next, .swiper-button-prev {
+            transition: all 0.3s ease;
+        }
+        .swiper-button-next:hover, .swiper-button-prev:hover {
+            background-color: #ef4444 !important;
+            color: white !important;
+            border-color: #ef4444 !important;
+        }
+        .swiper-pagination-bullet-active {
+            background: #ef4444 !important;
+        }
+        /* Mobile optimization tweaks */
+        @media (max-width: 640px) {
+            .hero-title {
+                font-size: clamp(2.5rem, 12vw, 4rem);
+                line-height: 0.9;
+            }
+        }
+    </style>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-white text-zinc-900 overflow-x-hidden">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7XKJ58D"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-sm py-3">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-2">
+                <img src="https://i.ibb.co/0pX6B0PN/Logo-removebg-preview.png" alt="Casas São José" class="h-16 md:h-24 w-auto object-contain" loading="eager">
+            </a>
+
+            <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-zinc-600 tracking-wider">
+                <a href="/" class="text-red-600 relative group">Início</a>
+                <a href="modelos" class="hover:text-red-600 transition-colors relative group">Modelos</a>
+                <a href="sobre-nos" class="hover:text-red-600 transition-colors relative group">Sobre Nós</a>
+                <a href="contato" class="hover:text-red-600 transition-colors relative group">Contato</a>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <a href="#contato" class="bg-red-600 text-white px-4 md:px-6 py-2 rounded-sm font-bold text-[10px] md:text-sm tracking-widest uppercase hover:bg-red-700 transition-colors flex items-center justify-center shadow-md">
+                    Orçamento
+                </a>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 text-zinc-900 focus:outline-none">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-zinc-100 absolute top-full left-0 right-0 shadow-xl transition-all duration-300 origin-top transform scale-y-0 opacity-0">
+            <div class="flex flex-col p-6 space-y-4 font-black uppercase tracking-widest text-sm text-zinc-600">
+                <a href="/" class="text-red-600 py-2">Início</a>
+                <a href="modelos" class="hover:text-red-600 py-2 transition-colors">Modelos</a>
+                <a href="sobre-nos" class="hover:text-red-600 py-2 transition-colors">Sobre Nós</a>
+                <a href="contato" class="hover:text-red-600 py-2 transition-colors">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[90vh] md:h-screen flex items-center justify-center overflow-hidden bg-white pt-20">
+        <div class="absolute inset-0 z-0">
+            <img src="https://i.ibb.co/DPBkFqDD/Vale-verde-mara-iv.jpg" alt="Modelo Vale Verde" class="w-full h-full object-cover opacity-90" loading="eager">
+            <div class="absolute inset-0 bg-gradient-to-b from-white/30 via-transparent to-white/95"></div>
+        </div>
+
+        <div class="relative z-10 container mx-auto px-4 text-center py-12 md:py-0">
+            <div class="max-w-4xl mx-auto">
+                <div class="flex flex-wrap justify-center gap-2 md:gap-4 mb-6 md:mb-8">
+                    <div class="bg-zinc-900/90 backdrop-blur-md px-3 md:px-4 py-1.5 md:py-2 rounded-full flex items-center gap-2 border border-zinc-700">
+                        <i data-lucide="award" class="w-3 h-3 md:w-4 md:h-4 text-red-500"></i>
+                        <span class="text-[8px] md:text-xs font-black text-white uppercase tracking-widest">40+ Anos de Experiência</span>
+                    </div>
+                    <div class="bg-white/90 backdrop-blur-md px-3 md:px-4 py-1.5 md:py-2 rounded-full flex items-center gap-2 border border-zinc-200">
+                        <i data-lucide="map-pin" class="w-3 h-3 md:w-4 md:h-4 text-red-600"></i>
+                        <span class="text-[8px] md:text-xs font-black text-zinc-900 uppercase tracking-widest">RS e SC</span>
+                    </div>
+                </div>
+
+                <h1 class="hero-title text-4xl md:text-7xl leading-tight mb-8 tracking-tighter uppercase font-black">
+                    <span class="text-red-600">São José,</span>
+                    <span class="text-white italic"> Construindo sua casa <br class="hidden md:block"> com Tradição e Qualidade</span>
+                </h1>
+                
+                <p class="text-base md:text-xl text-black font-medium max-w-2xl mx-auto mb-8 md:mb-10 leading-snug md:leading-relaxed px-4">
+                    Mais de 40 anos realizando sonhos com qualidade
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-4 px-4">
+                    <a href="modelos" class="w-full sm:w-auto bg-red-600 text-white px-8 md:px-10 py-4 md:py-5 rounded-sm font-black text-base md:text-lg uppercase tracking-widest transition-all flex items-center justify-center shadow-xl hover:bg-red-700 active:scale-95">
+                        Ver Modelos
+                    </a>
+                    <a href="#" class="whatsapp-link w-full sm:w-auto bg-[#25D366] text-white px-8 md:px-10 py-4 md:py-5 rounded-sm font-black text-base md:text-lg uppercase tracking-widest transition-all flex items-center justify-center shadow-xl hover:bg-[#1eb954] active:scale-95">
+                        <i data-lucide="message-circle" class="w-5 h-5 mr-2"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-16 md:py-24 bg-zinc-50 border-y border-zinc-100">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+                <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-zinc-200 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-red-50 rounded-lg flex items-center justify-center mb-6">
+                        <i data-lucide="award" class="w-6 h-6 text-red-600"></i>
+                    </div>
+                    <h3 class="text-lg md:text-xl font-black text-zinc-900 uppercase tracking-tight mb-3 md:mb-4">40+ Anos de História</h3>
+                    <p class="text-sm md:text-base text-zinc-500 font-medium leading-relaxed">Uma trajetória sólida construída com transparência e milhares de sonhos realizados.</p>
+                </div>
+                <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-zinc-200 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-red-50 rounded-lg flex items-center justify-center mb-6">
+                        <i data-lucide="shield-check" class="w-6 h-6 text-red-600"></i>
+                    </div>
+                    <h3 class="text-lg md:text-xl font-black text-zinc-900 uppercase tracking-tight mb-3 md:mb-4">Madeira Nobre</h3>
+                    <p class="text-sm md:text-base text-zinc-500 font-medium leading-relaxed">Trabalhamos com madeiras certificadas e de alta durabilidade, garantindo sua segurança.</p>
+                </div>
+                <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-zinc-200 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-red-50 rounded-lg flex items-center justify-center mb-6">
+                        <i data-lucide="trending-down" class="w-6 h-6 text-red-600"></i>
+                    </div>
+                    <h3 class="text-lg md:text-xl font-black text-zinc-900 uppercase tracking-tight mb-3 md:mb-4">Melhor Preço</h3>
+                    <p class="text-sm md:text-base text-zinc-500 font-medium leading-relaxed">Com a nossa qualidade e padrão de entrega, garantimos o melhor custo-benefício que oferecemos</p>
+                </div>
+                <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-zinc-200 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-red-50 rounded-lg flex items-center justify-center mb-6">
+                        <i data-lucide="zap" class="w-6 h-6 text-red-600"></i>
+                    </div>
+                    <h3 class="text-lg md:text-xl font-black text-zinc-900 uppercase tracking-tight mb-3 md:mb-4">Entrega Rápida</h3>
+                    <p class="text-sm md:text-base text-zinc-500 font-medium leading-relaxed">Cronograma rigoroso e equipe especializada para entregar sua casa no prazo combinado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Preview -->
+    <section id="nossos-projetos" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 md:after:mb-16 gap-6">
+                <div class="space-y-3 md:space-y-4">
+                    <h2 class="text-3xl md:text-6xl font-black text-zinc-900 tracking-tighter uppercase leading-none">Modelos em <span class="text-red-600">Destaque</span></h2>
+                    <p class="text-sm md:text-base text-zinc-500 font-medium max-w-xl">Conheça alguns de nossos projetos mais solicitados. Qualidade e design que cabem no seu bolso.</p>
+                </div>
+                <a href="modelos" class="group flex items-center gap-2 text-[10px] md:text-xs font-black uppercase tracking-widest text-zinc-400 hover:text-red-600 transition-colors">
+                    Ver todos os modelos <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8" id="featured-projects">
+                <!-- Projects will be loaded here via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 md:py-24 bg-zinc-50 border-y border-zinc-200">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12 md:mb-16 space-y-3 md:space-y-4">
+                <h2 class="text-3xl md:text-5xl font-black text-zinc-900 tracking-tighter uppercase leading-none">O que dizem nossos <span class="text-red-600">Clientes</span></h2>
+                <p class="text-sm md:text-base text-zinc-500 font-medium max-w-2xl mx-auto">A satisfação de quem já realizou o sonho da casa própria é o nosso maior orgulho.</p>
+            </div>
+
+            <div class="swiper testimonials-swiper pb-12">
+                <div class="swiper-wrapper">
+                    <!-- Testimonial 1 -->
+                    <div class="swiper-slide h-auto">
+                        <div class="bg-white p-8 rounded-xl shadow-sm border border-zinc-100 flex flex-col h-full">
+                            <div class="flex gap-1 text-yellow-500 mb-6">
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            </div>
+                            <p class="text-zinc-600 font-medium leading-relaxed mb-8 italic">"Realizei o sonho da minha casa própria com a Casas São José. Atendimento nota 10 e entrega rigorosamente no prazo. A qualidade da madeira nobre é visível em cada detalhe."</p>
+                            <div class="mt-auto flex items-center gap-4">
+                                <div>
+                                    <h4 class="font-black text-zinc-900 uppercase text-sm tracking-tight">Ricardo Silva</h4>
+                                    <p class="text-[10px] font-bold text-zinc-400 uppercase tracking-widest">Gravataí - RS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="swiper-slide h-auto">
+                        <div class="bg-white p-8 rounded-xl shadow-sm border border-zinc-100 flex flex-col h-full">
+                            <div class="flex gap-1 text-yellow-500 mb-6">
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            </div>
+                            <p class="text-zinc-600 font-medium leading-relaxed mb-8 italic">"Minha casa ficou pronta antes do esperado! A equipe é muito profissional e cuidadosa. O custo-benefício foi o melhor que encontrei em toda a região. Recomendo muito!"</p>
+                            <div class="mt-auto flex items-center gap-4">
+                                <div>
+                                    <h4 class="font-black text-zinc-900 uppercase text-sm tracking-tight">Maria Oliveira</h4>
+                                    <p class="text-[10px] font-bold text-zinc-400 uppercase tracking-widest">Canoas - RS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="swiper-slide h-auto">
+                        <div class="bg-white p-8 rounded-xl shadow-sm border border-zinc-100 flex flex-col h-full">
+                            <div class="flex gap-1 text-yellow-500 mb-6">
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            </div>
+                            <p class="text-zinc-600 font-medium leading-relaxed mb-8 italic">"Desde o projeto até o acabamento final, fomos muito bem atendidos. A casa é térmica e muito confortável. É gratificante ver um sonho se tornar realidade com tanta perfeição."</p>
+                            <div class="mt-auto flex items-center gap-4">
+                                <div>
+                                    <h4 class="font-black text-zinc-900 uppercase text-sm tracking-tight">João Santos</h4>
+                                    <p class="text-[10px] font-bold text-zinc-400 uppercase tracking-widest">Florianópolis - SC</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="swiper-slide h-auto">
+                        <div class="bg-white p-8 rounded-xl shadow-sm border border-zinc-100 flex flex-col h-full">
+                            <div class="flex gap-1 text-yellow-500 mb-6">
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            </div>
+                            <p class="text-zinc-600 font-medium leading-relaxed mb-8 italic">"Fiquei impressionada com a agilidade da obra. O material é de primeira e a casa é linda. O atendimento da Casas São José é diferenciado, tiraram todas as minhas dúvidas."</p>
+                            <div class="mt-auto flex items-center gap-4">
+                                <div>
+                                    <h4 class="font-black text-zinc-900 uppercase text-sm tracking-tight">Ana Paula</h4>
+                                    <p class="text-[10px] font-bold text-zinc-400 uppercase tracking-widest">Porto Alegre - RS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 5 -->
+                    <div class="swiper-slide h-auto">
+                        <div class="bg-white p-8 rounded-xl shadow-sm border border-zinc-100 flex flex-col h-full">
+                            <div class="flex gap-1 text-yellow-500 mb-6">
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            </div>
+                            <p class="text-zinc-600 font-medium leading-relaxed mb-8 italic">"Excelente construtora. Cumprem o que prometem. Minha casa de madeira nobre é o orgulho da família. Parabéns a toda a equipe pelo excelente trabalho."</p>
+                            <div class="mt-auto flex items-center gap-4">
+                                <div>
+                                    <h4 class="font-black text-zinc-900 uppercase text-sm tracking-tight">Carlos Eduardo</h4>
+                                    <p class="text-[10px] font-bold text-zinc-400 uppercase tracking-widest">Novo Hamburgo - RS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 6 -->
+                    <div class="swiper-slide h-auto">
+                        <div class="bg-white p-8 rounded-xl shadow-sm border border-zinc-100 flex flex-col h-full">
+                            <div class="flex gap-1 text-yellow-500 mb-6">
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            </div>
+                            <p class="text-zinc-600 font-medium leading-relaxed mb-8 italic">"Melhor investimento que já fiz. A casa é super aconchegante e o acabamento é impecável. Se você quer realizar o sonho da casa própria, pode confiar na Casas São José."</p>
+                            <div class="mt-auto flex items-center gap-4">
+                                <div>
+                                    <h4 class="font-black text-zinc-900 uppercase text-sm tracking-tight">Fernanda Lima</h4>
+                                    <p class="text-[10px] font-bold text-zinc-400 uppercase tracking-widest">Caxias do Sul - RS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                
+                <!-- Add Navigation Buttons -->
+                <div class="hidden md:block">
+                    <div class="swiper-button-prev !text-red-600 !w-10 !h-10 after:!text-xl bg-white rounded-full shadow-lg border border-zinc-100"></div>
+                    <div class="swiper-button-next !text-red-600 !w-10 !h-10 after:!text-xl bg-white rounded-full shadow-lg border border-zinc-100"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-24 bg-red-600 text-white overflow-hidden relative">
+        <div class="absolute inset-0 opacity-10 shimmer-grid"></div>
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <h2 class="text-3xl md:text-6xl font-black uppercase tracking-tighter mb-6 leading-none">Pronto para realizar <br> seu sonho?</h2>
+            <p class="text-lg md:text-xl font-medium mb-10 opacity-90 max-w-2xl mx-auto">Solicite agora um orçamento personalizado e descubra como é fácil ter sua casa de madeira nobre.</p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#contato" class="w-full sm:w-auto bg-white text-red-600 px-10 py-5 rounded-sm font-black text-lg uppercase tracking-widest shadow-2xl hover:scale-105 transition-transform">
+                    Solicitar Orçamento
+                </a>
+                <a href="modelos" class="w-full sm:w-auto border-2 border-white text-white px-10 py-5 rounded-sm font-black text-lg uppercase tracking-widest hover:bg-white hover:text-red-600 transition-all">
+                    Ver Todos Modelos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contato" class="py-16 md:py-24 bg-zinc-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-5xl font-black uppercase tracking-tighter mb-6 leading-none">
+                        SOLICITE SEU <br> <span class="text-red-600">ORÇAMENTO HOJE</span>
+                    </h2>
+                    <p class="text-zinc-400 text-lg font-medium mb-8">
+                        Preencha e receba seu orçamento rapidamente. Nossa equipe está pronta para transformar seu sonho em realidade.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-red-600/10 rounded-full flex items-center justify-center text-red-600">
+                                <i data-lucide="phone" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-black uppercase text-xs tracking-widest text-zinc-500">Atendimento Rápido</h4>
+                                <p class="font-bold text-zinc-200">(51) 98515-9241</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-red-600/10 rounded-full flex items-center justify-center text-red-600">
+                                <i data-lucide="map-pin" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-black uppercase text-xs tracking-widest text-zinc-500">Localização</h4>
+                                <p class="font-bold text-zinc-200">RS-020, 5781 - Neópolis, Gravataí - RS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 md:p-10 rounded-sm shadow-2xl">
+                    <h3 class="text-2xl font-black text-zinc-900 uppercase tracking-tight mb-2">Quero meu orçamento</h3>
+                    <p class="text-zinc-500 text-sm mb-8 font-medium">Condições especiais por tempo limitado!</p>
+                    <form class="lead-form space-y-4">
+                        <!-- Honeypot Proteção contra Spam -->
+                        <div style="display:none;">
+                            <label>Não preencha este campo</label>
+                            <input type="text" name="website_verification" tabindex="-1" autocomplete="off">
+                        </div>
+                        <div>
+                            <label class="text-[10px] font-black uppercase tracking-widest text-zinc-400 mb-1 block">Seu Nome</label>
+                            <input type="text" name="nome" required class="w-full bg-zinc-50 border border-zinc-200 px-4 py-4 text-zinc-900 focus:border-red-600 outline-none transition-colors font-bold" placeholder="Nome Completo">
+                        </div>
+                        <div>
+                            <label class="text-[10px] font-black uppercase tracking-widest text-zinc-400 mb-1 block">WhatsApp / Telefone</label>
+                            <input type="tel" name="telefone" required class="w-full bg-zinc-50 border border-zinc-200 px-4 py-4 text-zinc-900 focus:border-red-600 outline-none transition-colors font-bold" placeholder="(00) 00000-0000">
+                        </div>
+                        <div>
+                            <label class="text-[10px] font-black uppercase tracking-widest text-zinc-400 mb-1 block">Sua Cidade</label>
+                            <input type="text" name="cidade" required class="w-full bg-zinc-50 border border-zinc-200 px-4 py-4 text-zinc-900 focus:border-red-600 outline-none transition-colors font-bold" placeholder="Ex: Gravataí">
+                        </div>
+                        <div>
+                            <label class="text-[10px] font-black uppercase tracking-widest text-zinc-400 mb-1 block">Como você imagina sua casa?</label>
+                            <textarea name="descricao" rows="4" class="w-full bg-zinc-50 border border-zinc-200 px-4 py-4 text-zinc-900 focus:border-red-600 outline-none transition-colors font-bold resize-none" placeholder="Ex: Quero uma casa de madeira nobre, 2 quartos, 1 banheiro, com área para carro e varanda na frente."></textarea>
+                        </div>
+                        <div class="pt-4">
+                            <button type="submit" class="w-full py-5 bg-red-600 text-white font-black uppercase tracking-widest hover:bg-red-700 transition-all shadow-lg text-lg">Quero meu orçamento</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-zinc-950 text-white pt-24 pb-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+                <div class="space-y-6">
+                    <img src="https://i.ibb.co/0pX6B0PN/Logo-removebg-preview.png" alt="Casas São José" class="h-16 w-auto brightness-0 invert">
+                    <p class="text-zinc-500 font-medium leading-relaxed">Há mais de 40 anos transformando o sonho da casa própria em realidade com madeira nobre e excelência construtiva.</p>
+                </div>
+                <div>
+                    <h4 class="text-sm font-black uppercase tracking-widest mb-8 text-red-600">Navegação</h4>
+                    <ul class="space-y-4 text-zinc-400 font-bold text-sm">
+                        <li><a href="/" class="hover:text-white transition-colors">Início</a></li>
+                        <li><a href="modelos" class="hover:text-white transition-colors">Modelos</a></li>
+                        <li><a href="sobre-nos" class="hover:text-white transition-colors">Sobre Nós</a></li>
+                        <li><a href="contato" class="hover:text-white transition-colors">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-sm font-black uppercase tracking-widest mb-8 text-red-600">Contato</h4>
+                    <ul class="space-y-4 text-zinc-400 font-bold text-sm">
+                        <li class="flex items-center gap-3"><i data-lucide="phone" class="w-4 h-4 text-red-600"></i> (51) 98515-9241</li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-red-600 mt-1 flex-shrink-0"></i> 
+                            <span>RS-020, 5781 - Neópolis, Gravataí - RS</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-sm font-black uppercase tracking-widest mb-8 text-red-600">Legal</h4>
+                    <ul class="space-y-4 text-zinc-400 font-bold text-sm">
+                        <li><a href="politica-de-privacidade" class="hover:text-white transition-colors">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-12 border-t border-zinc-900 text-center text-zinc-600 text-[10px] font-black uppercase tracking-[0.3em]">
+                &copy; 2024 Casas São José. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="#" class="whatsapp-link fixed bottom-6 right-6 z-[99] bg-[#25D366] text-white p-4 md:p-5 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform group">
+        <span class="absolute right-full mr-3 bg-white text-zinc-900 px-3 py-1.5 rounded-lg text-[10px] font-black uppercase tracking-widest shadow-xl opacity-0 group-hover:opacity-100 md:group-hover:opacity-100 transition-opacity whitespace-nowrap border border-zinc-100">Fale Conosco</span>
+        <svg viewBox="0 0 24 24" class="w-7 h-7 md:w-9 md:h-9 fill-current" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+        </svg>
+    </a>
+
+    <!-- Exit Intent Modal -->
+    <div id="lead-modal" class="fixed inset-0 z-[200] hidden items-center justify-center p-4">
+        <div class="absolute inset-0 bg-black/80 backdrop-blur-sm close-modal"></div>
+        <div class="relative w-full max-w-lg bg-zinc-900 border border-zinc-800 rounded-sm shadow-2xl overflow-hidden p-8 md:p-12 text-center">
+            <button class="absolute top-4 right-4 text-zinc-500 hover:text-white close-modal">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+            <div class="flex items-center justify-center mb-8">
+                <img src="https://i.ibb.co/0pX6B0PN/Logo-removebg-preview.png" alt="Casas São José" class="h-16 w-auto object-contain brightness-0 invert">
+            </div>
+            <h2 class="text-2xl md:text-3xl font-light text-white mb-2">Bem-vindo à <span class="font-bold italic text-red-500">São José</span></h2>
+            <p class="text-zinc-400 text-sm mb-10 leading-relaxed font-medium">Deixe seus dados e receba informações exclusivas sobre nossos modelos de casas.</p>
+            <form class="lead-form space-y-4">
+                <!-- Honeypot Proteção contra Spam -->
+                <div style="display:none;">
+                    <label>Não preencha este campo</label>
+                    <input type="text" name="website_verification" tabindex="-1" autocomplete="off">
+                </div>
+                <input type="text" name="nome" placeholder="Seu nome completo" required class="w-full bg-zinc-800/50 border border-zinc-700 px-4 py-3 text-white placeholder:text-zinc-600 focus:border-red-600 outline-none transition-all rounded-sm">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <input type="tel" name="whatsapp" placeholder="WhatsApp" required class="w-full bg-zinc-800/50 border border-zinc-700 px-4 py-3 text-white placeholder:text-zinc-600 focus:border-red-600 outline-none transition-all rounded-sm">
+                    <input type="email" name="email" placeholder="E-mail" required class="w-full bg-zinc-800/50 border border-zinc-700 px-4 py-3 text-white placeholder:text-zinc-600 focus:border-red-600 outline-none transition-all rounded-sm">
+                </div>
+                <select name="interesse" required class="w-full bg-zinc-800/50 border border-zinc-700 px-4 py-3 text-white focus:border-red-600 outline-none transition-all rounded-sm appearance-none">
+                    <option value="" disabled selected>Qual seu interesse?</option>
+                    <option value="Madeira">Casas de Madeira</option>
+                    <option value="Alvenaria">Casas de Alvenaria</option>
+                    <option value="Investimento">Investimento / Airbnb</option>
+                </select>
+                <textarea name="descricao" rows="3" class="w-full bg-zinc-800/50 border border-zinc-700 px-4 py-3 text-white placeholder:text-zinc-600 focus:border-red-600 outline-none transition-all rounded-sm resize-none" placeholder="Como você imagina sua casa? (Ex: 2 quartos, varanda, madeira nobre...)"></textarea>
+                <button type="submit" class="w-full py-4 mt-4 bg-gradient-to-r from-red-600 to-orange-600 text-white font-black uppercase tracking-widest text-sm shadow-lg">QUERO SABER MAIS</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Load featured projects
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('featured-projects');
+            const featured = PROJECTS_DB.slice(0, 3);
+            
+            featured.forEach(p => {
+                container.innerHTML += `
+                    <div class="bg-white rounded-sm overflow-hidden shadow-lg border border-zinc-100 flex flex-col h-full group">
+                        <div class="relative aspect-[4/3] overflow-hidden cursor-pointer" onclick="window.location.href='projeto?id=${p.id}'">
+                            <img src="${p.img}" alt="${p.title}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            <div class="absolute top-4 right-4 bg-red-600 text-white px-3 py-1 text-[8px] md:text-[10px] font-black uppercase tracking-widest rounded-sm shadow-lg">Destaque</div>
+                        </div>
+                        <div class="p-6 md:p-8 flex flex-col flex-grow">
+                            <h3 class="text-xl md:text-2xl font-black text-zinc-900 uppercase tracking-tight mb-3 md:mb-4">${p.title}</h3>
+                            <div class="flex flex-wrap gap-y-2 gap-x-4 md:gap-x-6 mb-4 md:mb-6 text-[8px] md:text-[10px] font-bold text-zinc-400 uppercase tracking-widest">
+                                <span>📏 ${p.area}</span>
+                                <span>🛏️ ${p.rooms}</span>
+                                <span>🪵 ${p.material}</span>
+                            </div>
+                            <div class="mt-auto pt-4 md:pt-6 border-t border-zinc-100 space-y-4">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <span class="text-zinc-400 text-[8px] md:text-[10px] font-bold uppercase tracking-widest block">A partir de</span>
+                                        <span class="text-xl md:text-2xl font-black text-red-600 tracking-tighter">${p.price}</span>
+                                    </div>
+                                    <a href="projeto?id=${p.id}" class="bg-zinc-900 text-white p-2.5 md:p-3 rounded-sm hover:bg-red-600 transition-colors">
+                                        <i data-lucide="arrow-up-right" class="w-4 h-4 md:w-5 md:h-5"></i>
+                                    </a>
+                                </div>
+                                <a href="${getWhatsAppUrlForModel(p.title)}" target="_blank" class="w-full bg-red-600 text-white py-3 rounded-sm font-black text-[10px] uppercase tracking-widest hover:bg-red-700 transition-colors flex items-center justify-center">
+                                    Solicitar Orçamento
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+            lucide.createIcons();
+
+            // Initialize Testimonials Swiper
+            new Swiper('.testimonials-swiper', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 2,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                    },
+                }
+            });
+        });
+    </script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
