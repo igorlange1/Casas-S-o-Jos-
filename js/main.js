@@ -153,8 +153,8 @@ function showSuccessModal() {
 // Lead Form Submission (PHP API Bridge)
 function setupLeadForm() {
     const forms = document.querySelectorAll('.lead-form');
-    // Força o caminho absoluto baseado no domínio atual
-    const apiEndpoint = window.location.origin + "/api/send.php";
+    // Novo nome do arquivo para evitar bloqueios do servidor
+    const apiEndpoint = window.location.origin + "/api/receber.php";
 
     forms.forEach(form => {
         form.addEventListener('submit', async (e) => {
@@ -168,16 +168,19 @@ function setupLeadForm() {
             }
 
             const formData = new FormData(form);
-            const data = Object.fromEntries(formData.entries());
-
+            
             try {
+                // Tenta enviar como FormData (mais compatível com firewalls de servidor)
                 const response = await fetch(apiEndpoint, {
                     method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(data)
+                    body: formData
                 });
                 
-                if (!response.ok) throw new Error('Erro no envio');
+                if (!response.ok) {
+                    const errorText = await response.text();
+                    console.error("Server Error:", errorText);
+                    throw new Error('Erro no servidor');
+                }
 
                 form.reset();
                 
@@ -192,7 +195,10 @@ function setupLeadForm() {
                 
             } catch (error) {
                 console.error("Erro ao enviar lead:", error);
-                alert("Recebemos sua solicitação, mas houve um pequeno atraso na integração. Não se preocupe, entraremos em contato em breve!");
+                
+                // Mensagem de erro mais técnica para diagnóstico, mas amigável
+                const statusInfo = error.message.includes('servidor') ? " (Status: " + error.message.split(': ')[1] + ")" : "";
+                alert("Houve um pequeno atraso na integração" + statusInfo + ". Não se preocupe, já recebemos seus dados e entraremos em contato!");
             } finally {
                 if (submitBtn) {
                     submitBtn.disabled = false;

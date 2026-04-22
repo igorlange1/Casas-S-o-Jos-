@@ -2,15 +2,19 @@ Options -MultiViews
 RewriteEngine On
 RewriteBase /
 
+# Não mexer em arquivos que já existem (como os .php da pasta api)
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+
 # 1. Redirecionar /index.html para a raiz /
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/ [NC]
 RewriteRule ^index\.html$ / [L,R=301]
 
-# 2. Redirecionar /pagina.html para /pagina (URL limpa) - Opcional
+# 2. Redirecionar /pagina.html para /pagina (URL limpa)
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /+(.*)\.html\ HTTP/ [NC]
 RewriteRule ^(.+)\.html$ /$1 [L,R=301]
 
-# 3. Forçar .html internamente se o arquivo existir
+# 3. Forçar .html internamente se o arquivo não tiver extensão
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f

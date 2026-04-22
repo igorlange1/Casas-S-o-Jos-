@@ -38,13 +38,18 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit;
 }
 
-// 2. Recebe e decodifica o JSON do front-end
+// 2. Recebe os dados (suporta JSON ou FormData convencional)
 $json = file_get_contents('php://input');
 $data = json_decode($json, true);
 
 if (!$data) {
-    header('HTTP/1.1 400 Bad Request');
-    echo json_encode(['error' => 'Dados inválidos']);
+    // Se não for JSON, tenta pegar do POST direto (FormData)
+    $data = $_POST;
+}
+
+if (!$data || empty($data)) {
+    header('Content-Type: application/json', true, 400);
+    echo json_encode(['error' => 'Dados vazios ou formato inválido']);
     exit;
 }
 
