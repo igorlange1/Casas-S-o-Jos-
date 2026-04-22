@@ -153,8 +153,8 @@ function showSuccessModal() {
 // Lead Form Submission (PHP API Bridge)
 function setupLeadForm() {
     const forms = document.querySelectorAll('.lead-form');
-    // Agora apontamos para o nosso próprio servidor (Seguro)
-    const apiEndpoint = "/api/send.php";
+    // Força o caminho absoluto baseado no domínio atual
+    const apiEndpoint = window.location.origin + "/api/send.php";
 
     forms.forEach(form => {
         form.addEventListener('submit', async (e) => {

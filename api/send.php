@@ -1,6 +1,17 @@
 <?php
 error_reporting(0);
 ini_set('display_errors', 0);
+
+// CORS e Cabeçalhos
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: POST, OPTIONS');
+header('Access-Control-Allow-Headers: Content-Type');
+
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    header('HTTP/1.1 200 OK');
+    exit;
+}
+
 define('SECURE_ACCESS', true);
 require_once 'config.php';
 
@@ -89,6 +100,7 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_POST, true);
 curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($payload));
 curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); // Importante para compatibilidade em cPanel/Hospedagem compartilhada
 curl_setopt($ch, CURLOPT_HTTPHEADER, [
     'Content-Type: application/json'
 ]);
