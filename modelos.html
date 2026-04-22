@@ -49,9 +49,9 @@
             </a>
             <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-zinc-600 tracking-wider">
                 <a href="/" class="hover:text-red-600 transition-colors relative group">Início</a>
-                <a href="modelos.html" class="text-red-600 relative group">Modelos</a>
-                <a href="sobre-nos.html" class="hover:text-red-600 transition-colors relative group">Sobre Nós</a>
-                <a href="contato.html" class="hover:text-red-600 transition-colors relative group">Contato</a>
+                <a href="modelos" class="text-red-600 relative group">Modelos</a>
+                <a href="sobre-nos" class="hover:text-red-600 transition-colors relative group">Sobre Nós</a>
+                <a href="contato" class="hover:text-red-600 transition-colors relative group">Contato</a>
             </div>
             <a href="#" class="whatsapp-link bg-red-600 text-white px-6 py-2 rounded-sm font-bold text-sm tracking-widest uppercase hover:bg-red-700 transition-colors">Solicitar Orçamento</a>
         </div>
@@ -92,9 +92,9 @@
                     <h4 class="text-sm font-black uppercase tracking-widest mb-8 text-red-600">Navegação</h4>
                     <ul class="space-y-4 text-zinc-400 font-bold text-sm">
                         <li><a href="/" class="hover:text-white transition-colors">Início</a></li>
-                        <li><a href="modelos.html" class="hover:text-white transition-colors">Modelos</a></li>
-                        <li><a href="sobre-nos.html" class="hover:text-white transition-colors">Sobre Nós</a></li>
-                        <li><a href="contato.html" class="hover:text-white transition-colors">Contato</a></li>
+                        <li><a href="modelos" class="hover:text-white transition-colors">Modelos</a></li>
+                        <li><a href="sobre-nos" class="hover:text-white transition-colors">Sobre Nós</a></li>
+                        <li><a href="contato" class="hover:text-white transition-colors">Contato</a></li>
                     </ul>
                 </div>
                 <div>
@@ -110,7 +110,7 @@
                 <div>
                     <h4 class="text-sm font-black uppercase tracking-widest mb-8 text-red-600">Legal</h4>
                     <ul class="space-y-4 text-zinc-400 font-bold text-sm">
-                        <li><a href="politica-de-privacidade.html" class="hover:text-white transition-colors">Política de Privacidade</a></li>
+                        <li><a href="politica-de-privacidade" class="hover:text-white transition-colors">Política de Privacidade</a></li>
                     </ul>
                 </div>
             </div>
@@ -132,7 +132,7 @@
             filtered.forEach(p => {
                 container.innerHTML += `
                     <div class="bg-white rounded-sm overflow-hidden shadow-lg border border-zinc-200 flex flex-col h-full group">
-                        <div class="relative aspect-[4/3] overflow-hidden cursor-pointer" onclick="window.location.href='projeto.html?id=${p.id}'">
+                        <div class="relative aspect-[4/3] overflow-hidden cursor-pointer" onclick="window.location.href='projeto?id=${p.id}'">
                             <img src="${p.img}" alt="${p.title}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                             <div class="absolute top-4 right-4 bg-red-600 text-white px-3 py-1 text-[10px] font-black uppercase tracking-widest rounded-sm shadow-lg">
                                 ${p.category === 'madeira' ? 'Madeira Nobre' : 'Alvenaria'}
@@ -152,7 +152,7 @@
                                 </div>
                                 <div class="grid grid-cols-1 gap-2">
                                     <a href="${getWhatsAppUrlForModel(p.title)}" target="_blank" class="w-full bg-red-600 text-white py-3 rounded-sm font-black text-xs uppercase tracking-widest hover:bg-red-700 transition-colors flex items-center justify-center">Solicitar Orçamento</a>
-                                    <button onclick="window.location.href='projeto.html?id=${p.id}'" class="w-full bg-zinc-100 text-zinc-900 py-3 rounded-sm font-black text-xs uppercase tracking-widest hover:bg-zinc-200 transition-colors">Ver Detalhes</button>
+                                    <button onclick="window.location.href='projeto?id=${p.id}'" class="w-full bg-zinc-100 text-zinc-900 py-3 rounded-sm font-black text-xs uppercase tracking-widest hover:bg-zinc-200 transition-colors">Ver Detalhes</button>
                                 </div>
                             </div>
                         </div>
