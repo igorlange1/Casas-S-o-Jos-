@@ -1,14 +1,9 @@
+---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home2/saojosecasascom/public_html/
-    - /bin/mkdir -p $DEPLOYPATH
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp contato.html $DEPLOYPATH
-    - /bin/cp modelos.html $DEPLOYPATH
-    - /bin/cp politica-de-privacidade.html $DEPLOYPATH
-    - /bin/cp projeto.html $DEPLOYPATH
-    - /bin/cp sobre-nos.html $DEPLOYPATH
-    - /bin/cp .htaccess $DEPLOYPATH
-    - /bin/cp -R css $DEPLOYPATH
-    - /bin/cp -R js $DEPLOYPATH
-    - /bin/cp -R images $DEPLOYPATH
+    - export DEPLOYPATH=/home/$USER/public_html/
+    - /bin/cp -R * $DEPLOYPATH
+    # Proteção de arquivos sensíveis após o deploy
+    - /bin/chmod 755 $DEPLOYPATH/api
+    - /bin/chmod 644 $DEPLOYPATH/api/*.php
+    - /bin/chmod 644 $DEPLOYPATH/.htaccess

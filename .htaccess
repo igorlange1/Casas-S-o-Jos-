@@ -1,0 +1,17 @@
+Options -MultiViews
+RewriteEngine On
+RewriteBase /
+
+# 1. Redirecionar /index.html para a raiz /
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/ [NC]
+RewriteRule ^index\.html$ / [L,R=301]
+
+# 2. Redirecionar /pagina.html para /pagina (URL limpa) - Opcional
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /+(.*)\.html\ HTTP/ [NC]
+RewriteRule ^(.+)\.html$ /$1 [L,R=301]
+
+# 3. Forçar .html internamente se o arquivo existir
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]

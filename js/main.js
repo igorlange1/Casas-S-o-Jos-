@@ -118,7 +118,7 @@ function showSuccessModal() {
                     Logo mais entraremos em contato com você a respeito do seu orçamento.
                 </p>
                 
-                <a href="modelos" class="inline-block w-full py-4 bg-red-600 text-white font-black uppercase tracking-widest text-sm shadow-lg hover:bg-red-700 transition-all active:scale-95">
+                <a href="modelos.html" class="inline-block w-full py-4 bg-red-600 text-white font-black uppercase tracking-widest text-sm shadow-lg hover:bg-red-700 transition-all active:scale-95">
                     Continuar navegando
                 </a>
             </div>
