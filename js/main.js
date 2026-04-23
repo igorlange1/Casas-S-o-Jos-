@@ -150,6 +150,32 @@ function showSuccessModal() {
     document.getElementById('success-modal-overlay').addEventListener('click', close);
 }
 
+// Phone Masking
+function setupPhoneMasking() {
+    const phones = document.querySelectorAll('input[type="tel"], input[name="telefone"]');
+    
+    phones.forEach(input => {
+        input.addEventListener('input', (e) => {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length > 11) value = value.slice(0, 11);
+            
+            if (value.length <= 2) {
+                // Just the DDD
+                e.target.value = value.length > 0 ? '(' + value : value;
+            } else if (value.length <= 6) {
+                // DDD + space + group
+                e.target.value = '(' + value.slice(0, 2) + ') ' + value.slice(2);
+            } else if (value.length <= 10) {
+                // Fix for landlines (10 digits total)
+                e.target.value = '(' + value.slice(0, 2) + ') ' + value.slice(2, 6) + '-' + value.slice(6);
+            } else {
+                // Cell phones (11 digits total)
+                e.target.value = '(' + value.slice(0, 2) + ') ' + value.slice(2, 7) + '-' + value.slice(7);
+            }
+        });
+    });
+}
+
 // Lead Form Submission (PHP API Bridge)
 function setupLeadForm() {
     const forms = document.querySelectorAll('.lead-form');
@@ -349,6 +375,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setupNavbarScroll();
     setupExitIntent();
     setupLeadForm();
+    setupPhoneMasking();
     setupLightbox();
     
     // Set WhatsApp links

@@ -1,9 +1,9 @@
 RewriteEngine On
 RewriteBase /
 
-# Forçar HTTPS (Opcional, mas recomendado para sites modernos)
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# Forçar HTTPS (Ativar apenas no cPanel. No AI Studio isso quebra a prévia)
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # Se o arquivo físico existe, carrega ele direto (ex: imagens, scripts, receber.php)
 RewriteCond %{REQUEST_FILENAME} -f
