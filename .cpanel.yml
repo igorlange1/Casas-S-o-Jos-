@@ -1,24 +1,9 @@
+---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home2/saojosecasascom/public_html
-
-    # Garante que a pasta exista
-    - /bin/mkdir -p $DEPLOYPATH
-
-    # Copia arquivos normais
-    - /bin/cp -R css $DEPLOYPATH
-    - /bin/cp -R js $DEPLOYPATH
-    - /bin/cp -R images $DEPLOYPATH
-    - /bin/cp -R api $DEPLOYPATH
-
-    # Copia arquivos da raiz
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp contato.html $DEPLOYPATH
-    - /bin/cp modelos.html $DEPLOYPATH
-    - /bin/cp projeto.html $DEPLOYPATH
-    - /bin/cp sobre-nos.html $DEPLOYPATH
-    - /bin/cp politica-de-privacidade.html $DEPLOYPATH
-    - /bin/cp metadata.json $DEPLOYPATH
-
-    # Copia arquivos ocultos/importantes
+    - export DEPLOYPATH=$HOME/public_html/
+    - /bin/cp -R api css images js *.html metadata.json README.md $DEPLOYPATH
     - /bin/cp .htaccess $DEPLOYPATH
+    - /bin/chmod 755 $DEPLOYPATH/api
+    - /bin/chmod 644 $DEPLOYPATH/api/*.php
+    - /bin/chmod 644 $DEPLOYPATH/.htaccess
