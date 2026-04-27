@@ -3,6 +3,44 @@ const WHATSAPP_URL = "https://api.whatsapp.com/send/?phone=555185159241&text=Ol�
 
 const PROJECTS_DB = [
   {
+    id: "tupandi",
+    title: "Modelo Tupandi",
+    detail: "Madeira Nobre • 51m²",
+    description: "O Modelo Tupandi foi projetado para oferecer uma experiência única de integração com a natureza. Com um design que prioriza a ventilação cruzada e a iluminação natural, esta residência em madeira nobre combina elegância clássica com funcionalidade moderna.",
+    img: "https://i.ibb.co/99D2z0xr/11-Whats-App-Image-2026-04-10-at-17-06-30.jpg",
+    area: "51.0 m²",
+    rooms: "02 Dormitórios",
+    bathrooms: "01 Unid.",
+    material: "Madeira de Lei",
+    price: "R$ 74.900,00",
+    delivery: "75 dias úteis",
+    category: 'madeira',
+    gallery: [
+      "https://i.ibb.co/99D2z0xr/11-Whats-App-Image-2026-04-10-at-17-06-30.jpg",
+      "https://i.ibb.co/zHFLk2fp/2-Whats-App-Image-2026-04-10-at-17-06-30.jpg",
+      "https://i.ibb.co/cK8m6zF0/6-Whats-App-Image-2026-04-10-at-17-06-31.jpg",
+      "https://i.ibb.co/Ldd1kFYC/3-Whats-App-Image-2026-04-10-at-17-06-31.jpg",
+      "https://i.ibb.co/0j6K37JP/5-Whats-App-Image-2026-04-10-at-17-06-31.jpg",
+      "https://i.ibb.co/3YN4nmJ3/7-Whats-App-Image-2026-04-10-at-17-06-31.jpg",
+      "https://i.ibb.co/Cs8KM1xP/Whats-App-Image-2026-04-10-at-17-06-30.jpg",
+      "https://i.ibb.co/v6d0Dw2F/4-Whats-App-Image-2026-04-10-at-17-06-31.jpg",
+      "https://i.ibb.co/VX7f0jn/1-Whats-App-Image-2026-04-10-at-17-06-30.jpg"
+    ],
+    specifications: [
+      "Metragem Casa 6x8: 48 m²",
+      "Área 3x1: 3 m²",
+      "Total construído: 51 m²",
+      "Madeira de Lei",
+      "Telha barro natural com manta térmica",
+      "Piso cerâmico",
+      "Duplagem pinus com nós",
+      "Forro PVC",
+      "Banheiro luxo 1,5x2,0",
+      "Lavanderia em madeira",
+      "Parede azulejada na cozinha"
+    ]
+  },
+  {
     id: "vale-verde",
     title: "Modelo Vale Verde",
     detail: "Madeira Nobre • 70m²",
@@ -90,14 +128,14 @@ const PROJECTS_DB = [
   {
     id: "serrano",
     title: "Chalé Serrano",
-    detail: "Madeira Nobre • 84m²",
+    detail: "Madeira Nobre • 94,5m²",
     description: "Ideal para quem busca o máximo aproveitamento de espaço com sofisticação. O Chalé Serrano oferece uma planta inteligente com varandas amplas e acabamento em madeira nobre, projetado para durabilidade e conforto térmico excepcional.",
     img: "https://i.ibb.co/HTm2dkHW/bae4e0b4-96f5-4785-a89b-d768796e72d2.png",
-    area: "84.0 m²",
+    area: "94,5 m²",
     rooms: "03 Quartos",
-    bathrooms: "02 Unid.",
+    bathrooms: "01 Unid.",
     material: "Madeira Nobre",
-    price: "R$ 112.500,00",
+    price: "R$ 118.500,00",
     delivery: "120 dias úteis",
     category: 'madeira',
     gallery: [
@@ -118,9 +156,9 @@ const PROJECTS_DB = [
       "Duplada pinus",
       "2 portas balcão",
       "Varanda lateral e frontal",
-      "Deck frontal with guarda corpo",
+      "Deck frontal com guarda corpo",
       "Banheiro de luxo",
-      "Total construído 84m²"
+      "Total construído 94,5m²"
     ]
   },
   {
@@ -184,44 +222,6 @@ const PROJECTS_DB = [
       "Aberturas em alumínio ou madeira",
       "Instalações elétricas e hidráulicas internas",
       "Banheiro de luxo"
-    ]
-  },
-  {
-    id: "tupandi",
-    title: "Modelo Tupandi",
-    detail: "Madeira Nobre • 51m²",
-    description: "O Modelo Tupandi foi projetado para oferecer uma experiência única de integração com a natureza. Com um design que prioriza a ventilação cruzada e a iluminação natural, esta residência em madeira nobre combina elegância clássica com funcionalidade moderna.",
-    img: "https://i.ibb.co/99D2z0xr/11-Whats-App-Image-2026-04-10-at-17-06-30.jpg",
-    area: "51.0 m²",
-    rooms: "02 Dormitórios",
-    bathrooms: "01 Unid.",
-    material: "Madeira de Lei",
-    price: "R$ 74.900,00",
-    delivery: "75 dias úteis",
-    category: 'madeira',
-    gallery: [
-      "https://i.ibb.co/99D2z0xr/11-Whats-App-Image-2026-04-10-at-17-06-30.jpg",
-      "https://i.ibb.co/zHFLk2fp/2-Whats-App-Image-2026-04-10-at-17-06-30.jpg",
-      "https://i.ibb.co/cK8m6zF0/6-Whats-App-Image-2026-04-10-at-17-06-31.jpg",
-      "https://i.ibb.co/Ldd1kFYC/3-Whats-App-Image-2026-04-10-at-17-06-31.jpg",
-      "https://i.ibb.co/0j6K37JP/5-Whats-App-Image-2026-04-10-at-17-06-31.jpg",
-      "https://i.ibb.co/3YN4nmJ3/7-Whats-App-Image-2026-04-10-at-17-06-31.jpg",
-      "https://i.ibb.co/Cs8KM1xP/Whats-App-Image-2026-04-10-at-17-06-30.jpg",
-      "https://i.ibb.co/v6d0Dw2F/4-Whats-App-Image-2026-04-10-at-17-06-31.jpg",
-      "https://i.ibb.co/VX7f0jn/1-Whats-App-Image-2026-04-10-at-17-06-30.jpg"
-    ],
-    specifications: [
-      "Metragem Casa 6x8: 48 m²",
-      "Área 3x1: 3 m²",
-      "Total construído: 51 m²",
-      "Madeira de Lei",
-      "Telha barro natural com manta térmica",
-      "Piso cerâmico",
-      "Duplagem pinus com nós",
-      "Forro PVC",
-      "Banheiro luxo 1,5x2,0",
-      "Lavanderia em madeira",
-      "Parede azulejada na cozinha"
     ]
   }
 ];
